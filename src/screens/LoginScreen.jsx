@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, View ,Text} from 'react-native';
+import React, { useRef, useState, useCallback, useEffect, useMemo } from 'react'
+import { StyleSheet, View, Text, TextInputProps, } from 'react-native';
 
 const LoginScreen = () => {
     return (
@@ -9,6 +9,8 @@ const LoginScreen = () => {
     );
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    
+})
 
 export default LoginScreen;
