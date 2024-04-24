@@ -3,7 +3,7 @@
  * @Author: Knight
  * @Date: 2024-04-22 09:12:15
  * @LastEditors: your name
- * @LastEditTime: 2024-04-22 17:09:25
+ * @LastEditTime: 2024-04-23 09:27:05
  */
 import React, { useLayoutEffect } from 'react';
 import {
@@ -19,7 +19,7 @@ import {
     TouchableOpacity
 } from 'react-native'
 // 引入公共样式
-import { Colors, Fonts } from '../../Styles';
+import { Colors, Fonts } from '@/Styles';
 // 引入图标
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 // 引入进度条

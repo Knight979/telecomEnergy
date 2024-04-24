@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, StyleSheet, Text, ViewStyle, TextStyle } from 'react-native'
-import { Colors, Fonts } from '../../Styles'
+import { Colors, Fonts } from '@/Styles'
 
 export interface Props {
     error?: string
