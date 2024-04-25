@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "telecomEnergy.app"
-               BlueprintName = "telecomEnergy"
-               ReferencedContainer = "container:telecomEnergy.xcodeproj">
+               BuildableName = "OwlEyeTelecomMobileApp.app"
+               BlueprintName = "OwlEyeTelecomMobileApp"
+               ReferencedContainer = "container:OwlEyeTelecomMobileApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "telecomEnergyTests.xctest"
-               BlueprintName = "telecomEnergyTests"
-               ReferencedContainer = "container:telecomEnergy.xcodeproj">
+               BuildableName = "OwlEyeTelecomMobileAppTests.xctest"
+               BlueprintName = "OwlEyeTelecomMobileAppTests"
+               ReferencedContainer = "container:OwlEyeTelecomMobileApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "telecomEnergy.app"
-            BlueprintName = "telecomEnergy"
-            ReferencedContainer = "container:telecomEnergy.xcodeproj">
+            BuildableName = "OwlEyeTelecomMobileApp.app"
+            BlueprintName = "OwlEyeTelecomMobileApp"
+            ReferencedContainer = "container:OwlEyeTelecomMobileApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "telecomEnergy.app"
-            BlueprintName = "telecomEnergy"
-            ReferencedContainer = "container:telecomEnergy.xcodeproj">
+            BuildableName = "OwlEyeTelecomMobileApp.app"
+            BlueprintName = "OwlEyeTelecomMobileApp"
+            ReferencedContainer = "container:OwlEyeTelecomMobileApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

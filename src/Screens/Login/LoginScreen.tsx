@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-22 19:33:45
  * @LastEditors: Knight
- * @LastEditTime: 2024-04-24 16:00:07
+ * @LastEditTime: 2024-04-25 14:14:27
  */
 import React from 'react';
 import { StyleSheet, Text, View,TextInput,Platform, SafeAreaView, Image } from 'react-native';
@@ -15,22 +15,21 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useForm, Controller } from 'react-hook-form';
 const LoginScreen = () => {
     return (
-        <SafeAreaView>
+        <SafeAreaView style={styles.container}>
             <KeyboardAwareScrollView>
                 <View style={styles.container}>
-                    <Text>登录</Text>
-                    {/* <View style={styles.formContainer}>
+                    <View style={styles.formContainer}>
                         <View style={styles.imageContainer}>
-                            <Image
+                            {/* <Image
                                 source={{
                                     uri:
                                         Platform.OS === 'ios' ? 'SplashIcon' : 'splash_screen_logo',
                                 }}
                                 resizeMode="contain"
                                 style={styles.bigLogoImage}
-                            />
+                            /> */}
                         </View>
-                    </View> */}
+                    </View>
                 </View>
             </KeyboardAwareScrollView>
             
@@ -39,7 +38,7 @@ const LoginScreen = () => {
 }
 
 const styles = StyleSheet.create({
-    scrollview: {
+    scrollView: {
         backgroundColor: 'white',
     },
     contentContainerStyle: {
