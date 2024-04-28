@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { Colors, Common, Fonts } from '@/Theme'
+import { Colors, Common, Fonts } from '@/Styles'
 
 export interface Props {
   containerStyle?: object

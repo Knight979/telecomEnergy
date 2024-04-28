@@ -1,26 +1,34 @@
+/*
+ * @Description: file content
+ * @Author: Knight
+ * @version: 2.0.0
+ * @Date: 2024-04-26 09:13:00
+ * @LastEditors: Knight
+ * @LastEditTime: 2024-04-28 10:21:58
+ */
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { Colors, Common, Fonts } from '@/Theme'
-import { AlarmLevel } from '@/Models/Alarms'
-import { getAlertTypeInfo } from '@/Helpers'
+import { Colors, Common, Fonts } from '@/Styles'
+// import { AlarmLevel } from '@/Models/Alarms'
+// import { getAlertTypeInfo } from '@/Helpers'
 import { useTranslation } from 'react-i18next'
 
 export interface Props {
   containerStyle?: object
   amount: Object
-  type: AlarmLevel
+  // type: AlarmLevel
 }
 
 const OverviewAlarmItem: React.FC<Props> = ({
   amount,
   containerStyle,
-  type,
+  // type,
 }) => {
   const { t } = useTranslation()
   return (
     <View style={styles.shadow}>
       <View style={[styles.container, containerStyle]}>
-        <View
+        {/* <View
           style={[
             styles.tag,
             { backgroundColor: getAlertTypeInfo(type).color },
@@ -29,7 +37,7 @@ const OverviewAlarmItem: React.FC<Props> = ({
         <View style={styles.textRow}>
           <Text style={styles.title}>{t(getAlertTypeInfo(type).text)}</Text>
           <Text style={styles.amount}>{amount}</Text>
-        </View>
+        </View> */}
       </View>
     </View>
   )

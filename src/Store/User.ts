@@ -4,13 +4,14 @@
  * @version: 2.0.0
  * @Date: 2024-04-26 09:13:00
  * @LastEditors: Knight
- * @LastEditTime: 2024-04-28 10:15:32
+ * @LastEditTime: 2024-04-28 11:00:23
  */
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { User } from '@/Models'
 import { AppThunk } from '@/Store'
-// import { getUserInfo } from '@/Services/UserServices'
-import Axios from '@/Services'
+import { getUserInfo } from '@/Services/UserServices'
+import Axios from 'axios'
+
 // import { resetCloseAlarmPage } from './CloseAlarm'
 // import { resetOpenAlarmPage } from './OpenAlarm'
 // import { resetMaskedAlarmPage } from './MaskedAlarm'
@@ -58,26 +59,25 @@ const userSlice = createSlice({
 const { loginSuccess, reset, setUserProfile } = userSlice.actions
 export default userSlice.reducer
 
-// dispatch actions
-// export const loginUserSuccess =
-//     ({
-//         host,
-//         token,
-//         user,
-//     }: {
-//         host: string
-//         token: string
-//         user: User
-//     }): AppThunk =>
-//         async dispatch => {
-//             dispatch(
-//                 loginSuccess({
-//                     host,
-//                     token,
-//                     user,
-//                 }),
-//             )
-//         }
+export const loginUserSuccess =
+    ({
+        host,
+        token,
+        user,
+    }: {
+        host: string
+        token: string
+        user: User
+    }): AppThunk =>
+        async dispatch => {
+            dispatch(
+                loginSuccess({
+                    host,
+                    token,
+                    user,
+                }),
+            )
+        }
 
 export const logoutUser = (): AppThunk => dispatch => {
     dispatch(reset())
@@ -87,19 +87,19 @@ export const logoutUser = (): AppThunk => dispatch => {
     Axios.defaults.headers.Authorization = ''
 }
 
-// export const getUpdatedProfile = (): AppThunk => async (dispatch, getState) => {
-//     try {
-//         const { user } = getState().user
-//         const response = await getUserInfo(user!.id!)
-//         if (response.data) {
-//             dispatch(
-//                 setUserProfile({
-//                     ...response.data,
-//                     permissionList: user!.permissionList,
-//                 }),
-//             )
-//         }
-//     } catch (error) {
-//         console.log(error)
-//     }
-// }
+export const getUpdatedProfile = (): AppThunk => async (dispatch, getState) => {
+    try {
+        const { user } = getState().user
+        const response = await getUserInfo(user!.id!)
+        if (response.data) {
+            dispatch(
+                setUserProfile({
+                    ...response.data,
+                    permissionList: user!.permissionList,
+                }),
+            )
+        }
+    } catch (error) {
+        console.log(error)
+    }
+}

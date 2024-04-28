@@ -73,5 +73,6 @@ package-lock.json
 # react-native-config codegen
 ios/tmp.xcconfig
 
+
 # testing
 /coverage

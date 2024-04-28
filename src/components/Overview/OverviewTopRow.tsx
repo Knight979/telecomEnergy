@@ -1,6 +1,14 @@
+/*
+ * @Description: file content
+ * @Author: Knight
+ * @version: 2.0.0
+ * @Date: 2024-04-26 09:13:00
+ * @LastEditors: Knight
+ * @LastEditTime: 2024-04-28 10:22:47
+ */
 import React from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native'
-import { Colors, Common, Fonts, Sizes } from '@/Theme'
+import { Colors, Common, Fonts, Sizes } from '@/Styles'
 import { useTranslation } from 'react-i18next'
 
 export interface Props {

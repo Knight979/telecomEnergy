@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-22 19:33:45
  * @LastEditors: Knight
- * @LastEditTime: 2024-04-28 10:15:48
+ * @LastEditTime: 2024-04-28 10:30:56
  */
 import React, { useState } from 'react';
 import { StyleSheet, Text, View,TextInput,Platform, SafeAreaView, Image } from 'react-native';
@@ -38,15 +38,7 @@ const schema = yup.object().shape({
     verifyCode: yup.string().required('Common.text_error_required'),
 });
 
-const  FormInputs = {
-    resolver: yupResolver(schema),
-    defaultValues: {
-        username: '',
-        password: '',
-        host: lastHost,
-        verifyCode: '',
-    },
-}
+
 
 const LoginScreen = () => {
     // 获取i18n实例，翻译内容
@@ -55,6 +47,15 @@ const LoginScreen = () => {
     const lastHost = useSelector((rootState: RootState) => rootState.user.host)
     // 登录加载
     const [loginLoading, setLoginLoading] = useState(false);
+    const FormInputs = {
+        resolver: yupResolver(schema),
+        defaultValues: {
+            username: '',
+            password: '',
+            host: lastHost,
+            verifyCode: '',
+        },
+    }
     // 定义表单
     const { control, handleSubmit, errors, setError, setValue } = useForm(FormInputs)
     return (
