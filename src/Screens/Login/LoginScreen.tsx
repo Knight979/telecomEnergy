@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-22 19:33:45
  * @LastEditors: Knight
- * @LastEditTime: 2024-04-25 14:14:27
+ * @LastEditTime: 2024-04-28 21:46:40
  */
 import React from 'react';
 import { StyleSheet, Text, View,TextInput,Platform, SafeAreaView, Image } from 'react-native';
@@ -19,6 +19,7 @@ const LoginScreen = () => {
             <KeyboardAwareScrollView>
                 <View style={styles.container}>
                     <View style={styles.formContainer}>
+                        <Text>登录页</Text>
                         <View style={styles.imageContainer}>
                             {/* <Image
                                 source={{
