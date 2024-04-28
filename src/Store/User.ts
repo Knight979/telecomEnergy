@@ -1,8 +1,16 @@
+/*
+ * @Description: file content
+ * @Author: Knight
+ * @version: 2.0.0
+ * @Date: 2024-04-26 09:13:00
+ * @LastEditors: Knight
+ * @LastEditTime: 2024-04-28 10:15:32
+ */
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { User } from '@/Models'
-// import { AppThunk } from '@/Store'
+import { AppThunk } from '@/Store'
 // import { getUserInfo } from '@/Services/UserServices'
-// import Axios from '@/Services'
+import Axios from '@/Services'
 // import { resetCloseAlarmPage } from './CloseAlarm'
 // import { resetOpenAlarmPage } from './OpenAlarm'
 // import { resetMaskedAlarmPage } from './MaskedAlarm'
@@ -71,13 +79,13 @@ export default userSlice.reducer
 //             )
 //         }
 
-// export const logoutUser = (): AppThunk => dispatch => {
-//     dispatch(reset())
-//     dispatch(resetCloseAlarmPage())
-//     dispatch(resetOpenAlarmPage())
-//     dispatch(resetMaskedAlarmPage())
-//     Axios.defaults.headers.Authorization = ''
-// }
+export const logoutUser = (): AppThunk => dispatch => {
+    dispatch(reset())
+    // dispatch(resetCloseAlarmPage())
+    // dispatch(resetOpenAlarmPage())
+    // dispatch(resetMaskedAlarmPage())
+    Axios.defaults.headers.Authorization = ''
+}
 
 // export const getUpdatedProfile = (): AppThunk => async (dispatch, getState) => {
 //     try {

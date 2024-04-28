@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-22 14:23:57
  * @LastEditors: Knight
- * @LastEditTime: 2024-04-23 20:38:09
+ * @LastEditTime: 2024-04-28 10:15:22
  */
 // React Native的异步、持久的键值存储系统。
 import AsyncStorage from '@react-native-async-storage/async-storage'
@@ -37,7 +37,7 @@ const reducers = combineReducers({
     // common,
     // add more reducer here
 })
-// 定义根状态的类型
+// 定义Root状态的类型
 export type RootState = ReturnType<typeof reducers>
 // 配置 Redux Persist
 const persistConfig = {

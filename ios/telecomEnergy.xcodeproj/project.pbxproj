@@ -27,10 +27,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* OwlEyeTelecomMobileAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlEyeTelecomMobileAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* telecomEnergyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = telecomEnergyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* telecomEnergyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = telecomEnergyTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* OwlEyeTelecomMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwlEyeTelecomMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C7F89ECD611C346B856B201 /* Pods-telecomEnergy.debug dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telecomEnergy.debug dev.xcconfig"; path = "Target Support Files/Pods-telecomEnergy/Pods-telecomEnergy.debug dev.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* telecomEnergy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = telecomEnergy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = telecomEnergy/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = telecomEnergy/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = telecomEnergy/Images.xcassets; sourceTree = "<group>"; };
@@ -43,9 +44,10 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-telecomEnergy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-telecomEnergy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = telecomEnergy/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-telecomEnergy-telecomEnergyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telecomEnergy-telecomEnergyTests.release.xcconfig"; path = "Target Support Files/Pods-telecomEnergy-telecomEnergyTests/Pods-telecomEnergy-telecomEnergyTests.release.xcconfig"; sourceTree = "<group>"; };
-		DEA503712BD9F79F00E7BE7E /* OwlEyeTelecomMobileApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OwlEyeTelecomMobileApp copy-Info.plist"; path = "/Users/knight/project/telecomEnergy/ios/OwlEyeTelecomMobileApp copy-Info.plist"; sourceTree = "<absolute>"; };
+		A164BCEE88FEDCDB509309F7 /* Pods-telecomEnergy-telecomEnergyTests.debug dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telecomEnergy-telecomEnergyTests.debug dev.xcconfig"; path = "Target Support Files/Pods-telecomEnergy-telecomEnergyTests/Pods-telecomEnergy-telecomEnergyTests.debug dev.xcconfig"; sourceTree = "<group>"; };
+		DEA503712BD9F79F00E7BE7E /* telecomEnergy copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "telecomEnergy copy-Info.plist"; path = "/Users/knight/project/telecomEnergy/ios/telecomEnergy copy-Info.plist"; sourceTree = "<absolute>"; };
 		DEA503722BD9F9C700E7BE7E /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = ../src/Assets/Fonts; sourceTree = "<group>"; };
-		DEA503852BD9FB1E00E7BE7E /* OwlEyeTelecomMobileApp copy copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OwlEyeTelecomMobileApp copy copy-Info.plist"; path = "/Users/knight/project/telecomEnergy/ios/OwlEyeTelecomMobileApp copy copy-Info.plist"; sourceTree = "<absolute>"; };
+		DEA503852BD9FB1E00E7BE7E /* telecomEnergy copy copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "telecomEnergy copy copy-Info.plist"; path = "/Users/knight/project/telecomEnergy/ios/telecomEnergy copy copy-Info.plist"; sourceTree = "<absolute>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,7 +88,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* OwlEyeTelecomMobileApp */ = {
+		13B07FAE1A68108700A75B9A /* telecomEnergy */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -96,7 +98,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = OwlEyeTelecomMobileApp;
+			name = telecomEnergy;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -120,14 +122,14 @@
 			isa = PBXGroup;
 			children = (
 				DEA503722BD9F9C700E7BE7E /* Fonts */,
-				13B07FAE1A68108700A75B9A /* OwlEyeTelecomMobileApp */,
+				13B07FAE1A68108700A75B9A /* telecomEnergy */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* telecomEnergyTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				DEA503712BD9F79F00E7BE7E /* OwlEyeTelecomMobileApp copy-Info.plist */,
-				DEA503852BD9FB1E00E7BE7E /* OwlEyeTelecomMobileApp copy copy-Info.plist */,
+				DEA503712BD9F79F00E7BE7E /* telecomEnergy copy-Info.plist */,
+				DEA503852BD9FB1E00E7BE7E /* telecomEnergy copy copy-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -137,8 +139,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* OwlEyeTelecomMobileApp.app */,
-				00E356EE1AD99517003FC87E /* OwlEyeTelecomMobileAppTests.xctest */,
+				13B07F961A680F5B00A75B9A /* telecomEnergy.app */,
+				00E356EE1AD99517003FC87E /* telecomEnergyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +152,8 @@
 				5709B34CF0A7D63546082F79 /* Pods-telecomEnergy.release.xcconfig */,
 				5B7EB9410499542E8C5724F5 /* Pods-telecomEnergy-telecomEnergyTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-telecomEnergy-telecomEnergyTests.release.xcconfig */,
+				0C7F89ECD611C346B856B201 /* Pods-telecomEnergy.debug dev.xcconfig */,
+				A164BCEE88FEDCDB509309F7 /* Pods-telecomEnergy-telecomEnergyTests.debug dev.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -157,9 +161,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* OwlEyeTelecomMobileAppTests */ = {
+		00E356ED1AD99517003FC87E /* telecomEnergyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "OwlEyeTelecomMobileAppTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "telecomEnergyTests" */;
 			buildPhases = (
 				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -173,14 +177,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = OwlEyeTelecomMobileAppTests;
+			name = telecomEnergyTests;
 			productName = telecomEnergyTests;
-			productReference = 00E356EE1AD99517003FC87E /* OwlEyeTelecomMobileAppTests.xctest */;
+			productReference = 00E356EE1AD99517003FC87E /* telecomEnergyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* OwlEyeTelecomMobileApp */ = {
+		13B07F861A680F5B00A75B9A /* telecomEnergy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "OwlEyeTelecomMobileApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "telecomEnergy" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -194,9 +198,9 @@
 			);
 			dependencies = (
 			);
-			name = OwlEyeTelecomMobileApp;
+			name = telecomEnergy;
 			productName = telecomEnergy;
-			productReference = 13B07F961A680F5B00A75B9A /* OwlEyeTelecomMobileApp.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* telecomEnergy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -229,8 +233,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* OwlEyeTelecomMobileApp */,
-				00E356ED1AD99517003FC87E /* OwlEyeTelecomMobileAppTests */,
+				13B07F861A680F5B00A75B9A /* telecomEnergy */,
+				00E356ED1AD99517003FC87E /* telecomEnergyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -408,7 +412,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* OwlEyeTelecomMobileApp */;
+			target = 13B07F861A680F5B00A75B9A /* telecomEnergy */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -437,7 +441,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OwlEyeTelecomMobileApp.app/OwlEyeTelecomMobileApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/telecomEnergy.app/telecomEnergy";
 			};
 			name = Debug;
 		};
@@ -461,7 +465,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OwlEyeTelecomMobileApp.app/OwlEyeTelecomMobileApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/telecomEnergy.app/telecomEnergy";
 			};
 			name = Release;
 		};
@@ -498,7 +502,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = OwlEyeTelecomMobileApp;
+				PRODUCT_NAME = telecomEnergy;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -530,7 +534,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = OwlEyeTelecomMobileApp;
+				PRODUCT_NAME = telecomEnergy;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -609,7 +613,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -681,7 +688,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -762,7 +772,10 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -771,7 +784,7 @@
 		};
 		DEA503872BDA0B4F00E7BE7E /* Debug Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-telecomEnergy.debug.xcconfig */;
+			baseConfigurationReference = 0C7F89ECD611C346B856B201 /* Pods-telecomEnergy.debug dev.xcconfig */;
 			buildSettings = {
 				APP_NAME = "(Dev) OwlEye TE";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -802,7 +815,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = OwlEyeTelecomMobileApp;
+				PRODUCT_NAME = telecomEnergy;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -811,7 +824,7 @@
 		};
 		DEA503882BDA0B4F00E7BE7E /* Debug Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-telecomEnergy-telecomEnergyTests.debug.xcconfig */;
+			baseConfigurationReference = A164BCEE88FEDCDB509309F7 /* Pods-telecomEnergy-telecomEnergyTests.debug dev.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -832,14 +845,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OwlEyeTelecomMobileApp.app/OwlEyeTelecomMobileApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/telecomEnergy.app/telecomEnergy";
 			};
 			name = "Debug Dev";
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "OwlEyeTelecomMobileAppTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "telecomEnergyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -849,7 +862,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "OwlEyeTelecomMobileApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "telecomEnergy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
