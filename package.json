@@ -1,10 +1,12 @@
 {
-  "name": "OwlEyeTelecomMobileApp",
+  "name": "owleyetelecommobileapp",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android:staging": "ENVFILE=.env.staging react-native run-android",
+    "ios": "ENVFILE=.env.development react-native run-ios",
+    "ios:staging": "ENVFILE=.env.staging react-native run-ios ",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
