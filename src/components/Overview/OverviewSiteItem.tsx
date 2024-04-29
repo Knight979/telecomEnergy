@@ -1,49 +1,22 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import { Colors, Common, Fonts } from '@/Theme'
+/*
+ * @Description: file content
+ * @Author: Knight
+ * @version: 2.0.0
+ * @Date: 2024-04-28 21:27:07
+ * @LastEditors: Knight
+ * @LastEditTime: 2024-04-29 15:33:50
+ */
+import React, { Component } from 'react'
+import { Text, StyleSheet, View } from 'react-native'
 
-export interface Props {
-  containerStyle?: object
-  status: string
-  amount?: string
+export default class OverviewSiteItem extends Component {
+  render() {
+    return (
+      <View>
+        <Text> textInComponent </Text>
+      </View>
+    )
+  }
 }
 
-const OverviewSiteItem: React.FC<Props> = ({
-  status,
-  amount,
-  containerStyle,
-}) => {
-  return (
-    <View style={[styles.container, containerStyle]}>
-      <Text style={styles.title}>{status}</Text>
-      <Text style={styles.amount}>{amount}</Text>
-    </View>
-  )
-}
-
-const styles = StyleSheet.create({
-  container: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 10,
-    ...Common.shadow,
-    backgroundColor: '#FFFFFF',
-    marginRight: 10,
-    padding: 15,
-    width: 120,
-    marginHorizontal: 2,
-  },
-  title: {
-    ...Fonts.size14,
-    ...Fonts.regular,
-    color: Colors.text.font1,
-  },
-  amount: {
-    ...Fonts.size22,
-    ...Fonts.semiBold,
-    color: Colors.text.font1,
-    paddingTop: 10,
-  },
-})
-
-export default OverviewSiteItem
+const styles = StyleSheet.create({})

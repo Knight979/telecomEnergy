@@ -1,53 +1,22 @@
-import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { Colors, Fonts } from '@/Theme'
+/*
+ * @Description: file content
+ * @Author: Knight
+ * @version: 2.0.0
+ * @Date: 2024-04-28 21:27:07
+ * @LastEditors: Knight
+ * @LastEditTime: 2024-04-29 15:33:43
+ */
+import React, { Component } from 'react'
+import { Text, StyleSheet, View } from 'react-native'
 
-export interface Props {
-  title: string
-  containerStyle?: Object
-  color: string
-  icon: React.ReactNode
-  onPress: () => void
+export default class OverviewFunctionButton extends Component {
+  render() {
+    return (
+      <View>
+        <Text> textInComponent </Text>
+      </View>
+    )
+  }
 }
 
-const OverviewFunctionButton: React.FC<Props> = ({
-  title,
-  containerStyle,
-  color,
-  icon,
-  onPress,
-}) => {
-  return (
-    <TouchableOpacity
-      style={[styles.container, containerStyle]}
-      onPress={onPress}>
-      <View style={[styles.iconBox, { backgroundColor: color }]}>{icon}</View>
-      <Text style={styles.title}>{title}</Text>
-    </TouchableOpacity>
-  )
-}
-
-const styles = StyleSheet.create({
-  container: {
-    width: 85,
-    alignItems: 'center',
-    marginRight: 5,
-  },
-  iconBox: {
-    alignItems: 'center',
-    justifyContent: 'center',
-
-    width: 60,
-    height: 60,
-    borderRadius: 10,
-    marginBottom: 8,
-  },
-  title: {
-    ...Fonts.regular,
-    ...Fonts.size12,
-    color: Colors.text.font1,
-    textAlign: 'center',
-  },
-})
-
-export default OverviewFunctionButton
+const styles = StyleSheet.create({})

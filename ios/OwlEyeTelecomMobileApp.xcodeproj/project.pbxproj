@@ -49,11 +49,8 @@
 		B1FAF735DEB0013D97B4B586 /* libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB49B918F79F87D9388FC068 /* libPods-OwlEyeTelecomMobileApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OwlEyeTelecomMobileApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE38B4CE2BDF398A0099BD8A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		DE38B4E12BDF7C470099BD8A /* OwlEyeTelecomMobileApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OwlEyeTelecomMobileApp copy-Info.plist"; path = "/Users/knight/project/telecomEnergy/ios/OwlEyeTelecomMobileApp copy-Info.plist"; sourceTree = "<absolute>"; };
 		DE9ECB532BDF308D00DCBE5E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DEA503712BD9F79F00E7BE7E /* OwlEyeTelecomMobileApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OwlEyeTelecomMobileApp copy-Info.plist"; path = "/Users/knight/project/OwlEyeTelecomMobileAppTests/ios/OwlEyeTelecomMobileApp copy-Info.plist"; sourceTree = "<absolute>"; };
 		DEA503722BD9F9C700E7BE7E /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = ../src/Assets/Fonts; sourceTree = "<group>"; };
-		DEA503852BD9FB1E00E7BE7E /* OwlEyeTelecomMobileApp copy copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "OwlEyeTelecomMobileApp copy copy-Info.plist"; path = "/Users/knight/project/OwlEyeTelecomMobileAppTests/ios/OwlEyeTelecomMobileApp copy copy-Info.plist"; sourceTree = "<absolute>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -135,9 +132,6 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				DEA503712BD9F79F00E7BE7E /* OwlEyeTelecomMobileApp copy-Info.plist */,
-				DEA503852BD9FB1E00E7BE7E /* OwlEyeTelecomMobileApp copy copy-Info.plist */,
-				DE38B4E12BDF7C470099BD8A /* OwlEyeTelecomMobileApp copy-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";

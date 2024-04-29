@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-22 14:23:57
  * @LastEditors: Knight
- * @LastEditTime: 2024-04-23 20:38:09
+ * @LastEditTime: 2024-04-29 17:03:04
  */
 // React Native的异步、持久的键值存储系统。
 import AsyncStorage from '@react-native-async-storage/async-storage'
@@ -27,14 +27,14 @@ import user from './User'
 // import closeAlarm from './CloseAlarm'
 // import maskedAlarm from './MaskedAlarm'
 // import openAlarm from './OpenAlarm'
-// import common from './Common'
+import common from './Common'
 
 const reducers = combineReducers({
     user,
     // closeAlarm,
     // maskedAlarm,
     // openAlarm,
-    // common,
+    common,
     // add more reducer here
 })
 // 定义根状态的类型
