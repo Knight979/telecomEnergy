@@ -2,8 +2,8 @@
  * @Description: file content
  * @Author: Knight
  * @Date: 2024-04-22 09:12:15
- * @LastEditors: your name
- * @LastEditTime: 2024-04-23 09:27:05
+ * @LastEditors: Knight
+ * @LastEditTime: 2024-04-30 12:15:51
  */
 import React, { useLayoutEffect } from 'react';
 import {
@@ -24,6 +24,7 @@ import { Colors, Fonts } from '@/Styles';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 // 引入进度条
 import * as Progress from 'react-native-progress'
+import InputFieldError from './InputFieldError';
 
 // 定义组件的props类型
 export interface Props extends TextInputProps {
@@ -34,7 +35,7 @@ export interface Props extends TextInputProps {
     inputStyle?: StyleProp<TextStyle>
     containerStyle?: ViewStyle
     secureTextEntry?: boolean
-    button?: Object
+    // button?: Object
     error?: string | undefined
     hideError?: boolean
     remark?: string
@@ -52,7 +53,7 @@ const InputField: React.FC<Props> = ({
     inputStyle,
     containerStyle,
     secureTextEntry = false,
-    button,
+    // button,
     error,
     hideError = false,
     remark,
@@ -73,7 +74,7 @@ const InputField: React.FC<Props> = ({
         Platform.OS === 'android' &&
             secureTextEntry &&
             inputRef &&
-            inputRef.current?.setNativeProps({
+            inputRef?.current?.setNativeProps({
                 style: [Fonts.regular, inputStyle],
             })
     }, [inputRef, inputStyle, secureTextEntry])
@@ -136,7 +137,7 @@ const InputField: React.FC<Props> = ({
                 ) : null}
             </View>
             {remark && <Text style={styles.remarkText}>{remark}</Text>}
-            {/* {!hideError && <InputFieldError error={error} />} */}
+            {!hideError && <InputFieldError error={error} />}
         </View>
     );
 }

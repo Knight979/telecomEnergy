@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-22 14:23:57
  * @LastEditors: Knight
- * @LastEditTime: 2024-04-29 17:03:04
+ * @LastEditTime: 2024-04-29 20:02:03
  */
 // React Native的异步、持久的键值存储系统。
 import AsyncStorage from '@react-native-async-storage/async-storage'
@@ -50,6 +50,7 @@ const persistedReducer = persistReducer(persistConfig, reducers)
 
 const store = configureStore({
     reducer: persistedReducer,  // 使用持久化后的根 reducer
+    /** 添加中间件 */
     middleware: (getDefaultMiddleware) => {
         const middlewares = getDefaultMiddleware({
             serializableCheck: {
