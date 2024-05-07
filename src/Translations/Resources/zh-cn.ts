@@ -71,7 +71,7 @@ const zh_cn: LanguageStrings = {
 
     label_username: '用户名称',
     label_password: '密码',
-    label_server_location: '伺服器地址',
+    label_server_location: '服务器地址',
     label_verification_code: '验证码',
 
     button_login: '登入',

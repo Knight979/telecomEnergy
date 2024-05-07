@@ -20,6 +20,7 @@ export const isShowVerifyCode = async (instance: AxiosInstance) => {
     const { data } = await instance.get<DefaultResponse<number | undefined>>(
         '/isShowVerifyCode',
     )
+    
     return data
 }
 // 获取验证码

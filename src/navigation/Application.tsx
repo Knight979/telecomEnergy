@@ -4,10 +4,10 @@
  * @version: 2.0.0
  * @Date: 2024-04-22 17:25:55
  * @LastEditors: Knight
- * @LastEditTime: 2024-04-23 20:48:48
+ * @LastEditTime: 2024-05-06 16:18:06
  */
 import React from 'react';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack'
 import {
     NavigationContainer,
     NavigatorScreenParams,
@@ -15,26 +15,29 @@ import {
 //引入屏幕
 import {
     LoginScreen,
+    SetLanguageScreen,
     SettingsScreen
 } from '@/Screens'
 import { useSelector } from 'react-redux';
+import MainStackNavigator, { MainStackNavigatorParamList } from './MainStack';
+import { useInitApplication } from '@/Hooks'
 
 // 定义导航器参数类型
 export type ApplicationNavigatorParamList = {
-    Overview: undefined
     Login: undefined
-    HistoricalDataAdd: undefined
+    MainStack: NavigatorScreenParams<MainStackNavigatorParamList>
+    Settings: undefined,
     SetLanguage: undefined
 }
 // 创建导航器
-const Stack = createNativeStackNavigator<ApplicationNavigatorParamList>();
+const Stack = createStackNavigator<ApplicationNavigatorParamList>();
 
 const ApplicationNavigator = () => {
     // 获取应用token
-    // const token = useSelector((state: any) => state.user.token);
-    let token = '';
-     token = '';
-
+    const token = useSelector((state: any) => state.user.token);
+    // put custom hook here
+    useInitApplication()
+    // useInitJPushNotification()
     return (
         <NavigationContainer>
             <Stack.Navigator
@@ -46,10 +49,17 @@ const ApplicationNavigator = () => {
                     token === ''?(
                         <Stack.Screen name="Login" component={LoginScreen} />
                     ):(
-                        <Stack.Screen name='Overview' component={SettingsScreen} />
+                        <Stack.Screen
+                            name="MainStack"
+                            component={MainStackNavigator}
+                            options={{
+                                animationEnabled: false,
+                            }}
+                        />
+                        
                     )
                 }
-                
+                <Stack.Screen name="SetLanguage" component={SetLanguageScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );

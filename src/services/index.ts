@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-26 09:13:00
  * @LastEditors: Knight
- * @LastEditTime: 2024-04-29 17:03:34
+ * @LastEditTime: 2024-05-05 22:44:24
  */
 import axios, { AxiosResponse } from 'axios'
 import { store } from '@/Store'
@@ -16,7 +16,7 @@ import { t } from 'i18next'
 import { languageCode } from '@/Translations'
 
 // 创建 axios 实例
-const api = axios.create({
+const instance = axios.create({
     baseURL: '',
     headers: {
         Accept: 'application/json',
@@ -30,12 +30,15 @@ export const handleError = (message: string, data: any, status: number) => {
 }
 
 // 处理请求拦截器
-api.interceptors.request.use(function (config) {
+instance.interceptors.request.use(function (config) {
+    
     const { token, host } = store.getState().user;
     const { lang } = store.getState().common;
+    console.log('baseURL',config.baseURL)
+    console.log(host)
     if (!config.baseURL) {
         // 设置 baseURL
-        config.baseURL = host ? `${host}${Config.DEFAULT_API_PATH}` : ''
+        config.baseURL = host ? `${host}${Config.DEFAULT_instance_PATH}` : ''
     }
     // 设置请求头部的 Authorization 字段
     config.headers.authorization = token ?? '';
@@ -49,7 +52,7 @@ api.interceptors.request.use(function (config) {
 })
 
 // 处理响应拦截器
-api.interceptors.response.use(
+instance.interceptors.response.use(
     (response: AxiosResponse<DefaultResponse<any>>) => {
         if (response.data) {
             if (
@@ -110,4 +113,4 @@ api.interceptors.response.use(
     },
 )
 
-export default api
+export default instance

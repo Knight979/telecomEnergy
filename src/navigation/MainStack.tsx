@@ -4,21 +4,31 @@
  * @version: 2.0.0
  * @Date: 2024-04-23 14:39:10
  * @LastEditors: Knight
- * @LastEditTime: 2024-04-23 16:53:09
+ * @LastEditTime: 2024-05-06 14:26:11
  */
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { createStackNavigator } from '@react-navigation/stack'
+import { NavigatorScreenParams } from '@react-navigation/native'
 import MainTabNavigator, { MainTabNavigatorParamList } from './MainTab'
+export type MainStackNavigatorParamList = {
+  MainTab: NavigatorScreenParams<MainTabNavigatorParamList>
+}
 
+
+const Stack = createStackNavigator<MainStackNavigatorParamList>();
 
 const MainStackNavigator = () => {
   return (
-    <View>
-          <Text>MainStackNavigator</Text>
-    </View>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+        presentation: 'modal',
+      }}
+    >
+      <Stack.Screen name="MainTab" component={MainTabNavigator} />
+    </Stack.Navigator>
   )
 }
 
 export default MainStackNavigator
 
-const styles = StyleSheet.create({})

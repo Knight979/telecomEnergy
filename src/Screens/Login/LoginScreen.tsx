@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-22 19:33:45
  * @LastEditors: Knight
- * @LastEditTime: 2024-05-05 21:30:38
+ * @LastEditTime: 2024-05-06 16:02:28
  */
 import React, { useCallback, useEffect, useRef, useState, useMemo } from 'react';
 import { StyleSheet, Text, View, TextInput, Platform, SafeAreaView, Image, TouchableOpacity } from 'react-native';
@@ -16,7 +16,7 @@ import { useForm, Controller } from 'react-hook-form';
 import Config from 'react-native-config'
 import { useTranslation } from 'react-i18next';
 import * as yup from 'yup';
-// import { yupResolver } from '@hookform/resolvers/yup';
+import { yupResolver } from '@hookform/resolvers/yup';
 import SInfo from 'react-native-sensitive-info'
 import * as _ from 'lodash'
 import Toast from 'react-native-toast-message'
@@ -36,10 +36,9 @@ import axios from 'axios';
 import { VerifyCode } from '@/Models';
 import AxiosDefaultInstance from '@/Services'
 import { loginUserSuccess } from '@/Store/User'
-// import { TouchableOpacity } from 'react-native-gesture-handler';
 import { StackScreenProps } from '@react-navigation/stack'
 import { ApplicationNavigatorParamList } from '@/Navigation/Application';
-// import DeviceInfo from 'react-native-device-info'
+import DeviceInfo from 'react-native-device-info'
 
 
 // 定义 Form 类型接口
@@ -70,14 +69,13 @@ const LoginScreen = ({
     const { t } = useTranslation();
     // 获取最新服务器地址
     const lastHost = useSelector((rootState: RootState) => rootState.user.host)
-    // const lastHost = 'http://owleye.x3322.net:29081'
     const dispatch = useDispatch()
     const [loginLoading, setLoginLoading] = useState(false)
     const [hostLoading, setHostLoading] = useState(false)
     const axiosInstance = useRef(axios.create())
     const [vCode, setVCode] = useState<VerifyCode | undefined>(undefined)
-    const { control, handleSubmit, setError, setValue } = useForm<userForm>({
-        // resolver: schema.validate(),
+    const { control, handleSubmit, formState: { errors }, setError, setValue } = useForm<userForm>({
+        resolver: yupResolver(schema),
         defaultValues: {
             username: '',
             password: '',
@@ -88,27 +86,35 @@ const LoginScreen = ({
     // 获取服务器信息
     const getServerInfo = useCallback(
         async (hostUrl: string) => {
+            //检查 hostUrl 是否以 http 或 https 开头
             var re = new RegExp('^(http|https)://', 'i')
             var match = re.test(hostUrl)
             console.log('获取服务器信息:',match)
             if (!match) {
+                
                 setHostLoading(false)
                 setError('host', {
                     type: 'manual',
                     message: t('Authentication.text_error_url_format'),
                 })
+                console.log('Error:',errors)
                 return
             }
             try {
+                // 清除可能存在的验证码
                 setVCode(undefined)
-                axiosInstance.current.defaults.baseURL = `${hostUrl}/api`
-                console.log('初始:',`${hostUrl}/api`)
+                axiosInstance.current.defaults.baseURL = `${hostUrl}${Config.DEFAULT_API_PATH}`
+                console.log('初始:', `${hostUrl}${Config.DEFAULT_API_PATH}`)
                 const isShowResult = await isShowVerifyCode(axiosInstance.current)
+                
+                console.log('是否返回:', isShowResult.data)
+
                 if (isShowResult.data === 1) {
                     // hide verification code input
                 } else {
                     refreshVerifyCode()
                 }
+                // 设置加载状态为 false，并清除错误状态
                 setHostLoading(false)
                 setError('host', {
                     type: 'manual',
@@ -116,7 +122,6 @@ const LoginScreen = ({
                 })
                 setValue('verifyCode', '')
             } catch (error) {
-                console.log(error)
                 setError('host', {
                     type: 'manual',
                     message: t('Authentication.text_error_server_not_found'),
@@ -141,7 +146,10 @@ const LoginScreen = ({
         getLoginInformation()
     }, [getServerInfo, lastHost, setValue])
 
-    // 防抖函数
+    /**
+     * 防抖获取服务器信息
+     * @param host
+     */
     const debouncedGetServerInfo = useMemo(
         () => _.debounce(getServerInfo, 500, { 'maxWait': 1000 }),
         [getServerInfo],
@@ -154,6 +162,10 @@ const LoginScreen = ({
             setVCode(result.data)
         }
     }
+    /**
+     * host输入框改变
+     * @param host 
+     */
     const hostOnChange = (host: string) => {
         console.log('host:',host);
         // 开启host加载
@@ -218,11 +230,12 @@ const LoginScreen = ({
     const passwordInputRef = useRef<TextInput>(null)
     const hostInputRef = useRef<TextInput>(null)
     return (
-        <SafeAreaView style={styles.container}>
-            <KeyboardAwareScrollView>
+        <SafeAreaView style={{ flex: 1}}>
+            <KeyboardAwareScrollView bounces={false}
+                style={styles.scrollView}
+                keyboardShouldPersistTaps="always">
                 <View style={styles.container}>
                     <View style={styles.formContainer}>
-                        {/* <Text>登录页23333223{lastHost}</Text> */}
                         <View style={styles.imageContainer}>
                             <Image
                                 source={{
@@ -246,7 +259,7 @@ const LoginScreen = ({
                                     returnKeyType="next"
                                     autoCapitalize="none"
                                     editable={!loginLoading}
-                                    // error={t(errors.username?.message || '')}
+                                    error={t(errors.username?.message || '')}
                                 />
                             )}
                             name="username"
@@ -266,7 +279,7 @@ const LoginScreen = ({
                                     onSubmitEditing={() => hostInputRef.current?.focus()}
                                     returnKeyType="next"
                                     editable={!loginLoading}
-                                    // error={t(errors.password?.message || '')}
+                                    error={t(errors.password?.message || '')}
                                 />
                             )}
                             name="password"
@@ -290,7 +303,7 @@ const LoginScreen = ({
                                     loading={hostLoading}
                                     autoCapitalize="none"
                                     editable={!loginLoading}
-                                    // error={t(errors.host?.message || '')}
+                                    error={t(errors.host?.message || '')}
                                 />
                             )}
                             name="host"
@@ -341,11 +354,11 @@ const LoginScreen = ({
                                 {t('Authentication.text_language')}
                             </Text>
                         </TouchableOpacity>
-                        {/* <Text style={styles.versionText}>
+                        <Text style={styles.versionText}>
                             {t('Authentication.text_version', {
                                 version: DeviceInfo.getVersion(),
                             })}
-                        </Text> */}
+                        </Text>
                     </View>
                 </View>
             </KeyboardAwareScrollView>
