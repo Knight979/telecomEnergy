@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-26 09:13:00
  * @LastEditors: Knight
- * @LastEditTime: 2024-05-05 22:44:24
+ * @LastEditTime: 2024-05-07 11:50:11
  */
 import axios, { AxiosResponse } from 'axios'
 import { store } from '@/Store'
@@ -34,7 +34,7 @@ instance.interceptors.request.use(function (config) {
     
     const { token, host } = store.getState().user;
     const { lang } = store.getState().common;
-    console.log('baseURL',config.baseURL)
+    console.log('拦截器baseURL',config.baseURL)
     console.log(host)
     if (!config.baseURL) {
         // 设置 baseURL

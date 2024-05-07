@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-22 19:33:45
  * @LastEditors: Knight
- * @LastEditTime: 2024-05-06 16:02:28
+ * @LastEditTime: 2024-05-07 11:51:02
  */
 import React, { useCallback, useEffect, useRef, useState, useMemo } from 'react';
 import { StyleSheet, Text, View, TextInput, Platform, SafeAreaView, Image, TouchableOpacity } from 'react-native';
@@ -21,7 +21,6 @@ import SInfo from 'react-native-sensitive-info'
 import * as _ from 'lodash'
 import Toast from 'react-native-toast-message'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
-
 // 引入接口
 import {
     userLogin,
@@ -106,7 +105,7 @@ const LoginScreen = ({
                 axiosInstance.current.defaults.baseURL = `${hostUrl}${Config.DEFAULT_API_PATH}`
                 console.log('初始:', `${hostUrl}${Config.DEFAULT_API_PATH}`)
                 const isShowResult = await isShowVerifyCode(axiosInstance.current)
-                
+                // http://owleye.x3322.net:29081
                 console.log('是否返回:', isShowResult.data)
 
                 if (isShowResult.data === 1) {
@@ -174,8 +173,9 @@ const LoginScreen = ({
     }
     // 提交表单
     const onSubmit = async (data: Form) => {
+        console.log('data:', data)
         setLoginLoading(true)
-        console.log('data:',data)
+        
         const { username, password, verifyCode, host } = data
         const params = {
             loginName: username,
@@ -230,7 +230,7 @@ const LoginScreen = ({
     const passwordInputRef = useRef<TextInput>(null)
     const hostInputRef = useRef<TextInput>(null)
     return (
-        <SafeAreaView style={{ flex: 1}}>
+        <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
             <KeyboardAwareScrollView bounces={false}
                 style={styles.scrollView}
                 keyboardShouldPersistTaps="always">

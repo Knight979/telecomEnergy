@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-28 21:27:07
  * @LastEditors: Knight
- * @LastEditTime: 2024-04-29 15:39:26
+ * @LastEditTime: 2024-05-07 10:01:26
  */
 import Axios from './index'
 import { UserForm, DefaultResponse, User, VerifyCode } from '@/Models'
@@ -20,6 +20,7 @@ export const isShowVerifyCode = async (instance: AxiosInstance) => {
     const { data } = await instance.get<DefaultResponse<number | undefined>>(
         '/isShowVerifyCode',
     )
+    console.log(data)
     
     return data
 }
