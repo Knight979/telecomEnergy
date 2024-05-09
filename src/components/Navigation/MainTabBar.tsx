@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-23 15:52:19
  * @LastEditors: Knight
- * @LastEditTime: 2024-05-06 15:21:47
+ * @LastEditTime: 2024-05-08 19:00:21
  */
 import React from 'react';
 import { Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';

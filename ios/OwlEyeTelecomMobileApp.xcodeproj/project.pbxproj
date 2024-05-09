@@ -63,6 +63,25 @@
 		DE38B4FF2BE8E1DC0099BD8A /* APPInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPInfo.m; sourceTree = "<group>"; };
 		DE38B5442BE9C12E0099BD8A /* OwlEyeTelecomMobileAppProduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwlEyeTelecomMobileAppProduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE38B5452BE9C12E0099BD8A /* OwlEyeTelecomMobileAppProduction.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = OwlEyeTelecomMobileAppProduction.plist; path = /Users/knight/project/telecomEnergy/ios/OwlEyeTelecomMobileAppProduction.plist; sourceTree = "<absolute>"; };
+		DE38B5462BEAFA630099BD8A /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = OwlEyeTelecomMobileApp/Fonts/MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		DE38B5482BEAFA7B0099BD8A /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = OwlEyeTelecomMobileApp/Fonts/Ionicons.ttf; sourceTree = "<group>"; };
+		DE38B5492BEAFA7B0099BD8A /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Regular.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome6_Regular.ttf; sourceTree = "<group>"; };
+		DE38B54A2BEAFA7B0099BD8A /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Solid.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome6_Solid.ttf; sourceTree = "<group>"; };
+		DE38B54B2BEAFA7B0099BD8A /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = OwlEyeTelecomMobileApp/Fonts/Feather.ttf; sourceTree = "<group>"; };
+		DE38B54C2BEAFA7B0099BD8A /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = OwlEyeTelecomMobileApp/Fonts/EvilIcons.ttf; sourceTree = "<group>"; };
+		DE38B54D2BEAFA7B0099BD8A /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		DE38B54E2BEAFA7B0099BD8A /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		DE38B54F2BEAFA7B0099BD8A /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = OwlEyeTelecomMobileApp/Fonts/Entypo.ttf; sourceTree = "<group>"; };
+		DE38B5502BEAFA7B0099BD8A /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		DE38B5512BEAFA7B0099BD8A /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Brands.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
+		DE38B5522BEAFA7B0099BD8A /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Foundation.ttf; path = OwlEyeTelecomMobileApp/Fonts/Foundation.ttf; sourceTree = "<group>"; };
+		DE38B5532BEAFA7B0099BD8A /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome.ttf; sourceTree = "<group>"; };
+		DE38B5542BEAFA7B0099BD8A /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fontisto.ttf; path = OwlEyeTelecomMobileApp/Fonts/Fontisto.ttf; sourceTree = "<group>"; };
+		DE38B5552BEAFA7B0099BD8A /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = OwlEyeTelecomMobileApp/Fonts/AntDesign.ttf; sourceTree = "<group>"; };
+		DE38B5642BEAFAB10099BD8A /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = OwlEyeTelecomMobileApp/Fonts/Octicons.ttf; sourceTree = "<group>"; };
+		DE38B5652BEAFAB10099BD8A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SimpleLineIcons.ttf; path = OwlEyeTelecomMobileApp/Fonts/SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		DE38B5662BEAFAB10099BD8A /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Zocial.ttf; path = OwlEyeTelecomMobileApp/Fonts/Zocial.ttf; sourceTree = "<group>"; };
+		DE38B5672BEAFAB10099BD8A /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = OwlEyeTelecomMobileApp/Fonts/MaterialIcons.ttf; sourceTree = "<group>"; };
 		DE9ECB532BDF308D00DCBE5E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA59A872999265F9F1FA3485 /* Pods-OwlEyeTelecomMobileApp.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp.release production.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp.release production.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -149,6 +168,25 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				DE38B5672BEAFAB10099BD8A /* MaterialIcons.ttf */,
+				DE38B5642BEAFAB10099BD8A /* Octicons.ttf */,
+				DE38B5652BEAFAB10099BD8A /* SimpleLineIcons.ttf */,
+				DE38B5662BEAFAB10099BD8A /* Zocial.ttf */,
+				DE38B5552BEAFA7B0099BD8A /* AntDesign.ttf */,
+				DE38B54F2BEAFA7B0099BD8A /* Entypo.ttf */,
+				DE38B54C2BEAFA7B0099BD8A /* EvilIcons.ttf */,
+				DE38B54B2BEAFA7B0099BD8A /* Feather.ttf */,
+				DE38B5532BEAFA7B0099BD8A /* FontAwesome.ttf */,
+				DE38B54E2BEAFA7B0099BD8A /* FontAwesome5_Brands.ttf */,
+				DE38B5502BEAFA7B0099BD8A /* FontAwesome5_Regular.ttf */,
+				DE38B54D2BEAFA7B0099BD8A /* FontAwesome5_Solid.ttf */,
+				DE38B5512BEAFA7B0099BD8A /* FontAwesome6_Brands.ttf */,
+				DE38B5492BEAFA7B0099BD8A /* FontAwesome6_Regular.ttf */,
+				DE38B54A2BEAFA7B0099BD8A /* FontAwesome6_Solid.ttf */,
+				DE38B5542BEAFA7B0099BD8A /* Fontisto.ttf */,
+				DE38B5522BEAFA7B0099BD8A /* Foundation.ttf */,
+				DE38B5482BEAFA7B0099BD8A /* Ionicons.ttf */,
+				DE38B5462BEAFA630099BD8A /* MaterialCommunityIcons.ttf */,
 				DE38B4CE2BDF398A0099BD8A /* Config.xcconfig */,
 				13B07FAE1A68108700A75B9A /* OwlEyeTelecomMobileApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,

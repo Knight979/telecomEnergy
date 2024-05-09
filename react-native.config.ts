@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-29 21:49:28
  * @LastEditors: Knight
- * @LastEditTime: 2024-05-05 21:53:05
+ * @LastEditTime: 2024-05-08 20:20:34
  */
 module.exports = {
   project: {
@@ -13,6 +13,16 @@ module.exports = {
   },
   assets: ['./src/Assets/Fonts/'], // stays the same
 }
+module.exports = {
+  dependencies: {
+    'react-native-vector-icons': {
+      platforms: {
+        ios: null,
+        android: {},
+      },
+    },
+  },
+};
 declare module 'react-native-config' {
   export interface NativeConfig {
     HOSTNAME?: string;

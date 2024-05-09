@@ -4,16 +4,16 @@
  * @version: 2.0.0
  * @Date: 2024-04-23 15:20:06
  * @LastEditors: Knight
- * @LastEditTime: 2024-04-23 15:32:42
+ * @LastEditTime: 2024-05-09 08:12:02
  */
-import { StyleSheet, Text, View } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
 const AlarmsListScreen = () => {
   return (
-    <View>
-      <Text>AlarmsListScreen</Text>
-    </View>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#fff', justifyContent:'center',alignItems:'center'}}>
+       <Text>AlarmsListScreen</Text>
+    </SafeAreaView>
   )
 }
 

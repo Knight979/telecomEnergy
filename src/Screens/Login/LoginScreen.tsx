@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-22 19:33:45
  * @LastEditors: Knight
- * @LastEditTime: 2024-05-07 11:51:02
+ * @LastEditTime: 2024-05-09 08:16:37
  */
 import React, { useCallback, useEffect, useRef, useState, useMemo } from 'react';
 import { StyleSheet, Text, View, TextInput, Platform, SafeAreaView, Image, TouchableOpacity } from 'react-native';
@@ -96,7 +96,6 @@ const LoginScreen = ({
                     type: 'manual',
                     message: t('Authentication.text_error_url_format'),
                 })
-                console.log('Error:',errors)
                 return
             }
             try {
@@ -106,6 +105,8 @@ const LoginScreen = ({
                 console.log('初始:', `${hostUrl}${Config.DEFAULT_API_PATH}`)
                 const isShowResult = await isShowVerifyCode(axiosInstance.current)
                 // http://owleye.x3322.net:29081
+                // http://192.168.2.159:9082
+                // http://52.76.53.5/threetech-foreground/passport/login
                 console.log('是否返回:', isShowResult.data)
 
                 if (isShowResult.data === 1) {
@@ -307,7 +308,7 @@ const LoginScreen = ({
                                 />
                             )}
                             name="host"
-                            defaultValue="http://owleye.x3322.net:29081"
+                            defaultValue="http://52.76.53.5"
                         />
 
                         {vCode && vCode.verifyCodeImgStr ? (
