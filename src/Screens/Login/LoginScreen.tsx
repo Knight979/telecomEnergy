@@ -4,7 +4,7 @@
  * @version: 2.0.0
  * @Date: 2024-04-22 19:33:45
  * @LastEditors: Knight
- * @LastEditTime: 2024-05-09 08:16:37
+ * @LastEditTime: 2024-05-15 09:06:09
  */
 import React, { useCallback, useEffect, useRef, useState, useMemo } from 'react';
 import { StyleSheet, Text, View, TextInput, Platform, SafeAreaView, Image, TouchableOpacity } from 'react-native';
@@ -102,7 +102,7 @@ const LoginScreen = ({
                 // 清除可能存在的验证码
                 setVCode(undefined)
                 axiosInstance.current.defaults.baseURL = `${hostUrl}${Config.DEFAULT_API_PATH}`
-                console.log('初始:', `${hostUrl}${Config.DEFAULT_API_PATH}`)
+                // console.log('初始:', `${hostUrl}${Config.DEFAULT_API_PATH}`)
                 const isShowResult = await isShowVerifyCode(axiosInstance.current)
                 // http://owleye.x3322.net:29081
                 // http://192.168.2.159:9082
@@ -174,7 +174,6 @@ const LoginScreen = ({
     }
     // 提交表单
     const onSubmit = async (data: Form) => {
-        console.log('data:', data)
         setLoginLoading(true)
         
         const { username, password, verifyCode, host } = data

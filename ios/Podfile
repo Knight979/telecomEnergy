@@ -25,6 +25,11 @@ if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
   use_frameworks! :linkage => linkage.to_sym
 end
+pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+project 'OwlEyeTelecomMobileApp',
+'ProductionDebug' => :debug,
+'ProductionRelease' => :release
 
 target 'OwlEyeTelecomMobileApp' do
   config = use_native_modules!
@@ -44,6 +49,8 @@ target 'OwlEyeTelecomMobileApp' do
     inherit! :complete
     # Pods for testing
   end
+
+  # use_flipper!({'Flipper' => '0.164.0', configurations: ['Debug', 'productionDebug']}) # Add the Build Configuration name (not scheme name)
 
   post_install do |installer|
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202

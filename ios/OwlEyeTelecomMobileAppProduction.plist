@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>App Transport Security Settings</key>
+	<dict>
+		<key>Allow Arbitrary Loads</key>
+		<true/>
+	</dict>
 	<key>AppSettings</key>
 	<dict>
 		<key>BUILD_TYPE</key>
@@ -44,5 +49,7 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen.storyboard</string>
+	<key>Bundle OS Type code</key>
+	<string>APPL</string>
 </dict>
 </plist>

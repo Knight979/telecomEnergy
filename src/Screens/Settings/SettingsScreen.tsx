@@ -4,11 +4,12 @@
  * @version: 2.0.0
  * @Date: 2024-04-28 21:25:36
  * @LastEditors: Knight
- * @LastEditTime: 2024-05-06 14:10:52
+ * @LastEditTime: 2024-05-14 17:35:32
  */
 import React, { useState } from 'react'
 import { ConfirmButton, ConfirmModal, NavBar, SettingsRow } from '@/Components'
 import { MainTabNavigatorParamList } from '@/Navigation/MainTab'
+
 import { logoutUser } from '@/Store/User'
 import { Colors, Fonts, Sizes } from '@/Styles'
 import { StackScreenProps } from '@react-navigation/stack'
@@ -20,14 +21,13 @@ import { useTranslation } from 'react-i18next'
 
 import AccountIcon from '@/Assets/Icons/account.svg'
 
-
 const SettingsScreen = ({
   navigation,
 }: StackScreenProps<MainTabNavigatorParamList, 'Settings'>) => {
-  const dispatch = useDispatch()
-  const { t } = useTranslation()
-  const { user } = useSelector((rootState: RootState) => rootState.user)
-  const [isShowConfirmModal, setIsShowConfirmModal] = useState(false)
+  const dispatch = useDispatch();
+  const { t } = useTranslation();
+  const { user } = useSelector((rootState: RootState) => rootState.user);
+  const [isShowConfirmModal, setIsShowConfirmModal] = useState(false);
 
   return (
     <View style={styles.container}>
@@ -36,7 +36,7 @@ const SettingsScreen = ({
         <AccountIcon fill={Colors.theme.blue} />
         <Text style={styles.userName}>{user?.userName}</Text>
       </View>
-      {/* <SettingsRow
+      <SettingsRow
         title={t('Settings.title_language')}
         onPress={() => navigation.navigate('SetLanguage')}
       />
@@ -51,7 +51,7 @@ const SettingsScreen = ({
         onPress={() => {
           navigation.navigate('ChangePassword')
         }}
-      /> */}
+      /> 
       <ConfirmButton
         title={t('Settings.button_logout')}
         containerStyle={styles.button}
@@ -65,7 +65,9 @@ const SettingsScreen = ({
         description={t('Settings.text_confirm_logout')}
         isVisible={isShowConfirmModal}
         closeModal={() => setIsShowConfirmModal(false)}
-        onConfirm={() => dispatch(logoutUser())}
+        onConfirm={ () => {
+           dispatch(logoutUser())
+        }}
       />
     </View>
   )

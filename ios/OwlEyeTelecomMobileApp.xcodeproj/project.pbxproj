@@ -11,9 +11,8 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1646946CF4EA348C41FCF633 /* libPods-OwlEyeTelecomMobileApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB49B918F79F87D9388FC068 /* libPods-OwlEyeTelecomMobileApp.a */; };
-		35A5FF2D2404125D393045D3 /* libPods-OwlEyeTelecomMobileApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB49B918F79F87D9388FC068 /* libPods-OwlEyeTelecomMobileApp.a */; };
-		97C0A11BA4487A40361EDD5D /* libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1FAF735DEB0013D97B4B586 /* libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a */; };
+		30E87339DAC79EB12E1ED27C /* libPods-OwlEyeTelecomMobileApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F86EB28DA87FBC2727E851 /* libPods-OwlEyeTelecomMobileApp.a */; };
+		6AF7358F257119D02B06ED02 /* libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E090DED1808AF65144E54842 /* libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a */; };
 		DE38B5002BE8E1DC0099BD8A /* APPInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DE38B4FF2BE8E1DC0099BD8A /* APPInfo.m */; };
 		DE38B5332BE9C12E0099BD8A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		DE38B5342BE9C12E0099BD8A /* APPInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DE38B4FF2BE8E1DC0099BD8A /* APPInfo.m */; };
@@ -37,53 +36,30 @@
 		00E356EE1AD99517003FC87E /* OwlEyeTelecomMobileAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlEyeTelecomMobileAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* OwlEyeTelecomMobileAppTestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OwlEyeTelecomMobileAppTestsTests.m; sourceTree = "<group>"; };
+		066515C96F13587145E2CB99 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release production.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release production.xcconfig"; sourceTree = "<group>"; };
+		12389C5A48604B366ACAF73D /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug production .xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug production .xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug production .xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* OwlEyeTelecomMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwlEyeTelecomMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		22760E7C96C2E3DBC405946F /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release production.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release production.xcconfig"; sourceTree = "<group>"; };
-		333567E8683D302795CC4E81 /* Pods-OwlEyeTelecomMobileApp.debug production .xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp.debug production .xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp.debug production .xcconfig"; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-OwlEyeTelecomMobileAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileAppTests.debug.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		42E4B5545FB8446D4FB93530 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug dev.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug dev.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-OwlEyeTelecomMobileAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileAppTests.release.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-OwlEyeTelecomMobileAppTests-OwlEyeTelecomMobileAppTestsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileAppTests-OwlEyeTelecomMobileAppTestsTests.debug.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileAppTests-OwlEyeTelecomMobileAppTestsTests/Pods-OwlEyeTelecomMobileAppTests-OwlEyeTelecomMobileAppTestsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		625E7087395E2F24A1DD3357 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug production .xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug production .xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug production .xcconfig"; sourceTree = "<group>"; };
-		6B3CE07C7B95B7CB93C4F588 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		883C8E9FCA6D1926E2471FCB /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-OwlEyeTelecomMobileAppTests-OwlEyeTelecomMobileAppTestsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileAppTests-OwlEyeTelecomMobileAppTestsTests.release.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileAppTests-OwlEyeTelecomMobileAppTestsTests/Pods-OwlEyeTelecomMobileAppTests-OwlEyeTelecomMobileAppTestsTests.release.xcconfig"; sourceTree = "<group>"; };
-		B1FAF735DEB0013D97B4B586 /* libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB49B918F79F87D9388FC068 /* libPods-OwlEyeTelecomMobileApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OwlEyeTelecomMobileApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1C0016D4AFE90F4443DB211 /* Pods-OwlEyeTelecomMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp.release.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp.release.xcconfig"; sourceTree = "<group>"; };
-		CBA64BBC6F3DA73CD8FE070A /* Pods-OwlEyeTelecomMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp.debug.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
-		D17250D622584995F251A4D7 /* Pods-OwlEyeTelecomMobileApp.debug dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp.debug dev.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp.debug dev.xcconfig"; sourceTree = "<group>"; };
+		144ED9AA8F4E4B204CD90E51 /* Pods-OwlEyeTelecomMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp.release.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp.release.xcconfig"; sourceTree = "<group>"; };
+		23F86EB28DA87FBC2727E851 /* libPods-OwlEyeTelecomMobileApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OwlEyeTelecomMobileApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		295B16C5E806B08EEBC2B6C8 /* Pods-OwlEyeTelecomMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp.debug.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7822133F1DFA5BA4F5ACB710 /* Pods-OwlEyeTelecomMobileApp.debug dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp.debug dev.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp.debug dev.xcconfig"; sourceTree = "<group>"; };
+		8C3EDB0120636FE5A998A43D /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug dev.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug dev.xcconfig"; sourceTree = "<group>"; };
+		99B8CA6603BBDCEA184B2AD2 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE5DE4F6DEC3257A109F2AC4 /* Pods-OwlEyeTelecomMobileApp.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp.release production.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp.release production.xcconfig"; sourceTree = "<group>"; };
+		D6DE853027407CD13EC81F31 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC7AE73F1040E780021BA853 /* Pods-OwlEyeTelecomMobileApp.debug production .xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp.debug production .xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp.debug production .xcconfig"; sourceTree = "<group>"; };
 		DE38B4CE2BDF398A0099BD8A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		DE38B4FE2BE8E1DC0099BD8A /* APPInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPInfo.h; sourceTree = "<group>"; };
 		DE38B4FF2BE8E1DC0099BD8A /* APPInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPInfo.m; sourceTree = "<group>"; };
 		DE38B5442BE9C12E0099BD8A /* OwlEyeTelecomMobileAppProduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwlEyeTelecomMobileAppProduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE38B5452BE9C12E0099BD8A /* OwlEyeTelecomMobileAppProduction.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = OwlEyeTelecomMobileAppProduction.plist; path = /Users/knight/project/telecomEnergy/ios/OwlEyeTelecomMobileAppProduction.plist; sourceTree = "<absolute>"; };
-		DE38B5462BEAFA630099BD8A /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = OwlEyeTelecomMobileApp/Fonts/MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
-		DE38B5482BEAFA7B0099BD8A /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = OwlEyeTelecomMobileApp/Fonts/Ionicons.ttf; sourceTree = "<group>"; };
-		DE38B5492BEAFA7B0099BD8A /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Regular.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome6_Regular.ttf; sourceTree = "<group>"; };
-		DE38B54A2BEAFA7B0099BD8A /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Solid.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome6_Solid.ttf; sourceTree = "<group>"; };
-		DE38B54B2BEAFA7B0099BD8A /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = OwlEyeTelecomMobileApp/Fonts/Feather.ttf; sourceTree = "<group>"; };
-		DE38B54C2BEAFA7B0099BD8A /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = OwlEyeTelecomMobileApp/Fonts/EvilIcons.ttf; sourceTree = "<group>"; };
-		DE38B54D2BEAFA7B0099BD8A /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
-		DE38B54E2BEAFA7B0099BD8A /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
-		DE38B54F2BEAFA7B0099BD8A /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = OwlEyeTelecomMobileApp/Fonts/Entypo.ttf; sourceTree = "<group>"; };
-		DE38B5502BEAFA7B0099BD8A /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
-		DE38B5512BEAFA7B0099BD8A /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Brands.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
-		DE38B5522BEAFA7B0099BD8A /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Foundation.ttf; path = OwlEyeTelecomMobileApp/Fonts/Foundation.ttf; sourceTree = "<group>"; };
-		DE38B5532BEAFA7B0099BD8A /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = OwlEyeTelecomMobileApp/Fonts/FontAwesome.ttf; sourceTree = "<group>"; };
-		DE38B5542BEAFA7B0099BD8A /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fontisto.ttf; path = OwlEyeTelecomMobileApp/Fonts/Fontisto.ttf; sourceTree = "<group>"; };
-		DE38B5552BEAFA7B0099BD8A /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = OwlEyeTelecomMobileApp/Fonts/AntDesign.ttf; sourceTree = "<group>"; };
-		DE38B5642BEAFAB10099BD8A /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = OwlEyeTelecomMobileApp/Fonts/Octicons.ttf; sourceTree = "<group>"; };
-		DE38B5652BEAFAB10099BD8A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SimpleLineIcons.ttf; path = OwlEyeTelecomMobileApp/Fonts/SimpleLineIcons.ttf; sourceTree = "<group>"; };
-		DE38B5662BEAFAB10099BD8A /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Zocial.ttf; path = OwlEyeTelecomMobileApp/Fonts/Zocial.ttf; sourceTree = "<group>"; };
-		DE38B5672BEAFAB10099BD8A /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = OwlEyeTelecomMobileApp/Fonts/MaterialIcons.ttf; sourceTree = "<group>"; };
 		DE9ECB532BDF308D00DCBE5E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EA59A872999265F9F1FA3485 /* Pods-OwlEyeTelecomMobileApp.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OwlEyeTelecomMobileApp.release production.xcconfig"; path = "Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp.release production.xcconfig"; sourceTree = "<group>"; };
+		E090DED1808AF65144E54842 /* libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -92,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97C0A11BA4487A40361EDD5D /* libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a in Frameworks */,
+				6AF7358F257119D02B06ED02 /* libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35A5FF2D2404125D393045D3 /* libPods-OwlEyeTelecomMobileApp.a in Frameworks */,
-				1646946CF4EA348C41FCF633 /* libPods-OwlEyeTelecomMobileApp.a in Frameworks */,
+				30E87339DAC79EB12E1ED27C /* libPods-OwlEyeTelecomMobileApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				BB49B918F79F87D9388FC068 /* libPods-OwlEyeTelecomMobileApp.a */,
-				B1FAF735DEB0013D97B4B586 /* libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a */,
+				23F86EB28DA87FBC2727E851 /* libPods-OwlEyeTelecomMobileApp.a */,
+				E090DED1808AF65144E54842 /* libPods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,25 +143,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				DE38B5672BEAFAB10099BD8A /* MaterialIcons.ttf */,
-				DE38B5642BEAFAB10099BD8A /* Octicons.ttf */,
-				DE38B5652BEAFAB10099BD8A /* SimpleLineIcons.ttf */,
-				DE38B5662BEAFAB10099BD8A /* Zocial.ttf */,
-				DE38B5552BEAFA7B0099BD8A /* AntDesign.ttf */,
-				DE38B54F2BEAFA7B0099BD8A /* Entypo.ttf */,
-				DE38B54C2BEAFA7B0099BD8A /* EvilIcons.ttf */,
-				DE38B54B2BEAFA7B0099BD8A /* Feather.ttf */,
-				DE38B5532BEAFA7B0099BD8A /* FontAwesome.ttf */,
-				DE38B54E2BEAFA7B0099BD8A /* FontAwesome5_Brands.ttf */,
-				DE38B5502BEAFA7B0099BD8A /* FontAwesome5_Regular.ttf */,
-				DE38B54D2BEAFA7B0099BD8A /* FontAwesome5_Solid.ttf */,
-				DE38B5512BEAFA7B0099BD8A /* FontAwesome6_Brands.ttf */,
-				DE38B5492BEAFA7B0099BD8A /* FontAwesome6_Regular.ttf */,
-				DE38B54A2BEAFA7B0099BD8A /* FontAwesome6_Solid.ttf */,
-				DE38B5542BEAFA7B0099BD8A /* Fontisto.ttf */,
-				DE38B5522BEAFA7B0099BD8A /* Foundation.ttf */,
-				DE38B5482BEAFA7B0099BD8A /* Ionicons.ttf */,
-				DE38B5462BEAFA630099BD8A /* MaterialCommunityIcons.ttf */,
 				DE38B4CE2BDF398A0099BD8A /* Config.xcconfig */,
 				13B07FAE1A68108700A75B9A /* OwlEyeTelecomMobileApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -214,20 +170,16 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-OwlEyeTelecomMobileAppTests.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-OwlEyeTelecomMobileAppTests.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-OwlEyeTelecomMobileAppTests-OwlEyeTelecomMobileAppTestsTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-OwlEyeTelecomMobileAppTests-OwlEyeTelecomMobileAppTestsTests.release.xcconfig */,
-				883C8E9FCA6D1926E2471FCB /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug.xcconfig */,
-				42E4B5545FB8446D4FB93530 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug dev.xcconfig */,
-				6B3CE07C7B95B7CB93C4F588 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release.xcconfig */,
-				625E7087395E2F24A1DD3357 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug production .xcconfig */,
-				22760E7C96C2E3DBC405946F /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release production.xcconfig */,
-				CBA64BBC6F3DA73CD8FE070A /* Pods-OwlEyeTelecomMobileApp.debug.xcconfig */,
-				333567E8683D302795CC4E81 /* Pods-OwlEyeTelecomMobileApp.debug production .xcconfig */,
-				D17250D622584995F251A4D7 /* Pods-OwlEyeTelecomMobileApp.debug dev.xcconfig */,
-				C1C0016D4AFE90F4443DB211 /* Pods-OwlEyeTelecomMobileApp.release.xcconfig */,
-				EA59A872999265F9F1FA3485 /* Pods-OwlEyeTelecomMobileApp.release production.xcconfig */,
+				295B16C5E806B08EEBC2B6C8 /* Pods-OwlEyeTelecomMobileApp.debug.xcconfig */,
+				DC7AE73F1040E780021BA853 /* Pods-OwlEyeTelecomMobileApp.debug production .xcconfig */,
+				7822133F1DFA5BA4F5ACB710 /* Pods-OwlEyeTelecomMobileApp.debug dev.xcconfig */,
+				144ED9AA8F4E4B204CD90E51 /* Pods-OwlEyeTelecomMobileApp.release.xcconfig */,
+				CE5DE4F6DEC3257A109F2AC4 /* Pods-OwlEyeTelecomMobileApp.release production.xcconfig */,
+				99B8CA6603BBDCEA184B2AD2 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug.xcconfig */,
+				12389C5A48604B366ACAF73D /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug production .xcconfig */,
+				8C3EDB0120636FE5A998A43D /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug dev.xcconfig */,
+				D6DE853027407CD13EC81F31 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release.xcconfig */,
+				066515C96F13587145E2CB99 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release production.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -246,12 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "OwlEyeTelecomMobileAppTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				D2F6AEA79F7F259FC899D430 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				49FD50F556BEB7AF38B6740D /* [CP] Embed Pods Frameworks */,
+				F700747124CDB7B1D4AA4F34 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,13 +219,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "OwlEyeTelecomMobileApp" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				B9F9C7205AF233661151E8FC /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				229A5105DD8EEE4DEF03CD2F /* [CP] Embed Pods Frameworks */,
+				8B8750B9A899E0897CB8916C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -384,7 +336,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		229A5105DD8EEE4DEF03CD2F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,29 +353,41 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		49FD50F556BEB7AF38B6740D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		8B8750B9A899E0897CB8916C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9F9C7205AF233661151E8FC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -445,21 +409,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		D2F6AEA79F7F259FC899D430 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests/Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DE38B53B2BE9C12E0099BD8A /* Bundle React Native code and images */ = {
@@ -478,24 +447,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OwlEyeTelecomMobileApp/Pods-OwlEyeTelecomMobileApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+		F700747124CDB7B1D4AA4F34 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -556,7 +508,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 883C8E9FCA6D1926E2471FCB /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug.xcconfig */;
+			baseConfigurationReference = 99B8CA6603BBDCEA184B2AD2 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -583,7 +535,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B3CE07C7B95B7CB93C4F588 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release.xcconfig */;
+			baseConfigurationReference = D6DE853027407CD13EC81F31 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -607,7 +559,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBA64BBC6F3DA73CD8FE070A /* Pods-OwlEyeTelecomMobileApp.debug.xcconfig */;
+			baseConfigurationReference = 295B16C5E806B08EEBC2B6C8 /* Pods-OwlEyeTelecomMobileApp.debug.xcconfig */;
 			buildSettings = {
 				APP_NAME = "(Dev) OwlEye TE";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -615,10 +567,13 @@
 				ASSET_URL = "";
 				BUILD_TYPE = "";
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFAULT_API_PATH = /api;
 				DEFAULT_ASSET_PATH = /file;
-				DEVELOPMENT_TEAM = M8ZJ4GS57Y;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = M8ZJ4GS57Y;
 				ENABLE_BITCODE = NO;
 				ENVIRONMENT = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -633,14 +588,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Owleye.TelecomEnergy;
 				PRODUCT_NAME = OwlEyeTelecomMobileApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = TelecomEnergy;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -649,7 +606,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1C0016D4AFE90F4443DB211 /* Pods-OwlEyeTelecomMobileApp.release.xcconfig */;
+			baseConfigurationReference = 144ED9AA8F4E4B204CD90E51 /* Pods-OwlEyeTelecomMobileApp.release.xcconfig */;
 			buildSettings = {
 				APP_NAME = "(Dev) OwlEye TE";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -657,24 +614,29 @@
 				ASSET_URL = "";
 				BUILD_TYPE = "";
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFAULT_API_PATH = /api;
 				DEFAULT_ASSET_PATH = /file;
-				DEVELOPMENT_TEAM = M8ZJ4GS57Y;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = M8ZJ4GS57Y;
 				ENVIRONMENT = "";
 				INFOPLIST_FILE = OwlEyeTelecomMobileAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Owleye.TelecomEnergy;
 				PRODUCT_NAME = OwlEyeTelecomMobileApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = TelecomEnergy;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -758,10 +720,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -834,10 +793,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -923,10 +879,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -935,7 +888,7 @@
 		};
 		DE38B4F92BE8D7850099BD8A /* Debug production  */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 333567E8683D302795CC4E81 /* Pods-OwlEyeTelecomMobileApp.debug production .xcconfig */;
+			baseConfigurationReference = DC7AE73F1040E780021BA853 /* Pods-OwlEyeTelecomMobileApp.debug production .xcconfig */;
 			buildSettings = {
 				APP_NAME = "(Dev) OwlEye TE";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -943,10 +896,13 @@
 				ASSET_URL = "";
 				BUILD_TYPE = "";
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFAULT_API_PATH = /api;
 				DEFAULT_ASSET_PATH = /file;
-				DEVELOPMENT_TEAM = M8ZJ4GS57Y;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = M8ZJ4GS57Y;
 				ENABLE_BITCODE = NO;
 				ENVIRONMENT = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -961,14 +917,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Owleye.TelecomEnergy;
 				PRODUCT_NAME = OwlEyeTelecomMobileApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = TelecomEnergy;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -977,7 +935,7 @@
 		};
 		DE38B4FA2BE8D7850099BD8A /* Debug production  */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 625E7087395E2F24A1DD3357 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug production .xcconfig */;
+			baseConfigurationReference = 12389C5A48604B366ACAF73D /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug production .xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1068,10 +1026,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -1081,7 +1036,7 @@
 		};
 		DE38B4FC2BE8D7A90099BD8A /* Release production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA59A872999265F9F1FA3485 /* Pods-OwlEyeTelecomMobileApp.release production.xcconfig */;
+			baseConfigurationReference = CE5DE4F6DEC3257A109F2AC4 /* Pods-OwlEyeTelecomMobileApp.release production.xcconfig */;
 			buildSettings = {
 				APP_NAME = "(Dev) OwlEye TE";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1089,24 +1044,29 @@
 				ASSET_URL = "";
 				BUILD_TYPE = Production;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFAULT_API_PATH = /api;
 				DEFAULT_ASSET_PATH = /file;
-				DEVELOPMENT_TEAM = M8ZJ4GS57Y;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = M8ZJ4GS57Y;
 				ENVIRONMENT = "";
 				INFOPLIST_FILE = OwlEyeTelecomMobileAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Owleye.TelecomEnergy;
 				PRODUCT_NAME = OwlEyeTelecomMobileApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = TelecomEnergy;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1114,7 +1074,7 @@
 		};
 		DE38B4FD2BE8D7A90099BD8A /* Release production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22760E7C96C2E3DBC405946F /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release production.xcconfig */;
+			baseConfigurationReference = 066515C96F13587145E2CB99 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.release production.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -1398,10 +1358,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -1410,7 +1367,7 @@
 		};
 		DEA503872BDA0B4F00E7BE7E /* Debug Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D17250D622584995F251A4D7 /* Pods-OwlEyeTelecomMobileApp.debug dev.xcconfig */;
+			baseConfigurationReference = 7822133F1DFA5BA4F5ACB710 /* Pods-OwlEyeTelecomMobileApp.debug dev.xcconfig */;
 			buildSettings = {
 				APP_NAME = "(Dev) OwlEye TE";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1418,10 +1375,13 @@
 				ASSET_URL = "";
 				BUILD_TYPE = Debug;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFAULT_API_PATH = /api;
 				DEFAULT_ASSET_PATH = /file;
-				DEVELOPMENT_TEAM = M8ZJ4GS57Y;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = M8ZJ4GS57Y;
 				ENABLE_BITCODE = NO;
 				ENVIRONMENT = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1436,14 +1396,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Owleye.TelecomEnergy;
 				PRODUCT_NAME = OwlEyeTelecomMobileApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = TelecomEnergy;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1452,7 +1414,7 @@
 		};
 		DEA503882BDA0B4F00E7BE7E /* Debug Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42E4B5545FB8446D4FB93530 /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug dev.xcconfig */;
+			baseConfigurationReference = 8C3EDB0120636FE5A998A43D /* Pods-OwlEyeTelecomMobileApp-OwlEyeTelecomMobileAppTests.debug dev.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (

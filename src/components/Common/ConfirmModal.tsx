@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import Modal from 'react-native-modal'
 import { Colors, Common, Fonts, Sizes } from '@/Styles'
@@ -27,12 +27,28 @@ const ConfirmModal: React.FC<Props> = ({
   confirmButtonText,
   cancelButtonText,
 }) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
+  const [shouldConfirm, setShouldConfirm] = useState(false);
+  const handleModalHide = () => {
+    console.log('handleModalHide')
+    if (shouldConfirm){
+      onConfirm()
+      setShouldConfirm(false)
+    }
+  }
+  const handleConfirmClick = () => {
+    console.log('handleConfirmClick')
+    setShouldConfirm(true);
+    closeModal();
+  };
   return (
     <Modal
       isVisible={isVisible}
       onBackdropPress={() => {
         closeModal()
+      }}
+      onModalHide={() => {
+        handleModalHide();
       }}
       backdropTransitionOutTiming={0}>
       <View style={styles.container}>
@@ -63,7 +79,7 @@ const ConfirmModal: React.FC<Props> = ({
             containerStyle={styles.submitButton}
             title={confirmButtonText ?? t('Common.confirm')}
             onPress={() => {
-              onConfirm()
+              handleConfirmClick()
             }}
           />
         </View>

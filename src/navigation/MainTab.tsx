@@ -15,7 +15,10 @@ export type MainTabNavigatorParamList = {
     Overview: undefined // NavigatorScreenParams<HomeStackNavigatorParamList>
     Alarms: undefined
     GISMap: undefined
-    Settings: undefined
+    Settings: undefined,
+    SetLanguage: undefined,
+    SetTimeZone: undefined
+    ChangePassword: undefined,
 }
 
 export type MainNavigatorNavigationProp = BottomTabNavigationProp<MainTabNavigatorParamList>
